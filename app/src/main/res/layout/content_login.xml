@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/loginName"
         android:layout_weight="0.06"
-        android:hint="login name"
+        android:hint="@string/loginName"
         android:isScrollContainer="false"
         android:inputType="textEmailAddress" />
 
