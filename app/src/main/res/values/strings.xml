@@ -9,4 +9,8 @@
     <string name="btn1">Button1</string>
     <string name="btn2">Button2</string>
     <string name="enable_sth">Enable Something</string>
+    <string name="dialog_message">Do you want to finish the activity?</string>
+    <string name="dialog_title">quit</string>
+    <string name="ok">Yes</string>
+    <string name="cancel">No</string>
 </resources>
