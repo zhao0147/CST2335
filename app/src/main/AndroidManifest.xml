@@ -2,7 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.sulin.lab1">
 
-    <uses-feature android:name="android.hardware.camera"
+    <uses-feature
+        android:name="android.hardware.camera"
         android:required="true" />
 
     <application
@@ -14,7 +15,6 @@
         <activity android:name=".StartActivity">
 
         </activity>
-
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_login"
@@ -25,9 +25,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ListItemsActivity">
-
-        </activity>
+        <activity android:name=".ListItemsActivity"></activity>
+        <activity android:name=".ChatWindow"></activity>
     </application>
 
 </manifest>
