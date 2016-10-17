@@ -20,7 +20,7 @@ public class ChatDatabaseHelper extends SQLiteOpenHelper {
     }
 
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("CREATE TABLE " + TABLE_NAME + " (" + KEY_ID + " int AUTO_INCREMENT, " + KEY_MESSAGE + " String" + ");");
+        db.execSQL("CREATE TABLE " + TABLE_NAME + " (" + KEY_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + KEY_MESSAGE + " TEXT" + ");");
 
         Log.i("ChatDatabaseHelper", "Calling onCreate");
     }
