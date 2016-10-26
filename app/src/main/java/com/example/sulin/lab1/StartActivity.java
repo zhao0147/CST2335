@@ -35,8 +35,18 @@ public class StartActivity extends AppCompatActivity {
                 Log.i(ACTIVITY_NAME, "User clicked Start Chat");
 
                 Intent intent = new Intent(StartActivity.this, ChatWindow.class);
-                startActivityForResult(intent, 5);
+                startActivityForResult(intent, 0);
             }});
+
+        Button btnWeatherFct = (Button)findViewById(R.id.btnWeatherForcast);
+        btnWeatherFct.setOnClickListener( new View.OnClickListener() {
+            public void onClick(View v) {
+
+                //open listItems activity
+                Intent intent = new Intent(StartActivity.this, WeatherForecast.class);
+                startActivityForResult(intent, 1);
+            }
+        });
 
         Log.i(ACTIVITY_NAME, "In onCreate()");
     }

@@ -16,4 +16,5 @@
     <string name="cancel">否</string>
     <string name="startChat">开始聊天</string>
     <string name="send">发送</string>
+    <string name="weatherForcast">天气预报</string>
 </resources>
