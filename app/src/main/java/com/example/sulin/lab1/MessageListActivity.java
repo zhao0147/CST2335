@@ -100,7 +100,7 @@ public class MessageListActivity extends AppCompatActivity {
         });
 
         //in this case, “this” is the ChatWindow, which is-A Context object
-        messageAdapter = new MessageListActivity.ChatAdapter( this );
+        messageAdapter = new ChatAdapter( this );
         lvShow.setAdapter(messageAdapter);
 
 
