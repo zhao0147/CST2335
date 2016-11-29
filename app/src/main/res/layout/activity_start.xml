@@ -44,4 +44,13 @@
         android:layout_below="@+id/btnStartChat"
         android:layout_alignStart="@+id/btnStartChat"
         android:layout_marginTop="57dp" />
+
+    <Button
+        android:text="Test Toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnWeatherForcast"
+        android:layout_alignStart="@+id/btnWeatherForcast"
+        android:layout_marginTop="34dp"
+        android:id="@+id/btn_testToolbar" />
 </RelativeLayout>

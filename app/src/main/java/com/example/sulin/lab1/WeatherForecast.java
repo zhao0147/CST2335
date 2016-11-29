@@ -125,21 +125,21 @@ public class WeatherForecast extends AppCompatActivity {
         }
 
         @Override
-        protected void onPostExecute(String result) {
+            protected void onPostExecute(String result) {
 
-            //set imageview
-            FileInputStream fis = null;
-            try {
-                fis = openFileInput(bmpFileName);
-            }
-            catch (FileNotFoundException e) {    e.printStackTrace();  }
+                //set imageview
+                FileInputStream fis = null;
+                try {
+                    fis = openFileInput(bmpFileName);
+                }
+        catch (FileNotFoundException e) {    e.printStackTrace();  }
 
-            if (fis != null) {
-                Bitmap bm = BitmapFactory.decodeStream(fis);
+        if (fis != null) {
+            Bitmap bm = BitmapFactory.decodeStream(fis);
 
-                ImageView imageView = (ImageView)findViewById(R.id.ivCurrentWeather);
-                imageView.setImageBitmap(bm);
-            }
+            ImageView imageView = (ImageView)findViewById(R.id.ivCurrentWeather);
+            imageView.setImageBitmap(bm);
+        }
 
             //set progress bar invisible
             ProgressBar pBar = (ProgressBar)findViewById(R.id.progressBar);

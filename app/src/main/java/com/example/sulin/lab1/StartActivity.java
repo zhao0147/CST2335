@@ -42,8 +42,18 @@ public class StartActivity extends AppCompatActivity {
         btnWeatherFct.setOnClickListener( new View.OnClickListener() {
             public void onClick(View v) {
 
-                //open listItems activity
+                //open weather forcast activity
                 Intent intent = new Intent(StartActivity.this, WeatherForecast.class);
+                startActivityForResult(intent, 1);
+            }
+        });
+
+        Button btnTestToolbar = (Button)findViewById(R.id.btn_testToolbar);
+        btnTestToolbar.setOnClickListener( new View.OnClickListener() {
+            public void onClick(View v) {
+
+                //open test toolbar activity
+                Intent intent = new Intent(StartActivity.this, TestToolbar.class);
                 startActivityForResult(intent, 1);
             }
         });
